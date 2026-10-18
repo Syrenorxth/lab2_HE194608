@@ -13,8 +13,16 @@
   color: #f2f2f2;
 }
 
+.app.dark button,
+.app.dark input,
+.app.dark select {
+  background-color: #333;
+  color: #f2f2f2;
+  border-color: #666;
+}
+
 .container {
-  max-width: 700px;
+  max-width: 1000px;
   margin: 0 auto;
 }
 
@@ -34,14 +42,19 @@ button {
   margin-left: 8px;
 }
 
+.search-bar {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
 .search-bar input {
-  width: 100%;
+  flex: 1;
   padding: 10px;
   font-size: 16px;
   border: 1px solid #aaa;
   border-radius: 4px;
-  box-sizing: border-box;
-  margin-bottom: 20px;
 }
 
 .movie-item {
@@ -67,9 +80,19 @@ select {
   border-radius: 4px;
 }
 
+.content {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.list-section {
+  flex: 1;
+}
+
 .movie-detail {
+  width: 300px;
   border: 1px solid #aaa;
   border-radius: 4px;
   padding: 15px;
-  margin-bottom: 20px;
 }

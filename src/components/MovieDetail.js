@@ -1,7 +1,7 @@
 function MovieDetail({ movie, onClose }) {
   return (
     <div className="movie-detail">
-      <p>Movie Details</p>
+      <h3>Movie Details</h3>
       <p>Title: {movie.title}</p>
       <p>Genre: {movie.genre}</p>
       <p>Year: {movie.year}</p>

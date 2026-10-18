@@ -1,7 +1,12 @@
-import { useRef } from 'react';
+import { useRef, useEffect } from 'react';
 
 function SearchBar({ onSearch }) {
   const searchRef = useRef();
+
+  // Tự động focus vào ô tìm kiếm khi mở trang
+  useEffect(() => {
+    searchRef.current.focus();
+  }, []);
 
   const handleChange = () => {
     onSearch(searchRef.current.value);
@@ -9,6 +14,7 @@ function SearchBar({ onSearch }) {
 
   return (
     <div className="search-bar">
+      <label>Search Movie: </label>
       <input
         type="text"
         placeholder="Tìm tên phim..."

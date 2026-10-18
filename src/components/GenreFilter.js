@@ -1,6 +1,7 @@
 function GenreFilter({ genre, onChange }) {
   return (
     <div>
+      <label>Genre: </label>
       <select value={genre} onChange={(e) => onChange(e.target.value)}>
         <option value="All">All Genres</option>
         <option value="Action">Action</option>
